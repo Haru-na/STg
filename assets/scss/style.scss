@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  background-color: yellow;
-}
-
 li {
   list-style: none;
 }
@@ -16,6 +12,8 @@ a{
 }
 
 $col3Width:100%/3;
+
+
 
 @mixin pcOnly {
   @media screen and (min-width: 768px){
@@ -45,6 +43,7 @@ $col3Width:100%/3;
 
 
 //反映するのも
+@import "mainview";
 @import "header";
 @import "main";
 @import "footer";
