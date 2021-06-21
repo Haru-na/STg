@@ -7,7 +7,15 @@ li {
   list-style: none;
 }
 
-.menu {
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: yellow;
+}
+
+header .menu > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,5 +24,66 @@ li {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 100px;
+}
+
+#contact {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#contact > h2 {
+  text-align: center;
+  font-size: 6em;
+}
+
+#contact .contact-btn {
+  font-size: 50px;
+  width: 33.33333%;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 10px 15px black;
+          box-shadow: 0 10px 15px black;
+}
+
+#contact .contact-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact .contact-btn > a {
+  color: black;
+}
+
+#contact:hover .rotate-anime {
+  -webkit-animation: rotate-anime 3s ease 1;
+          animation: rotate-anime 3s ease 1;
+}
+
+@-webkit-keyframes rotate-anime {
+  0% {
+    -webkit-transform: rotatex(0);
+            transform: rotatex(0);
+  }
+  100% {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
+}
+
+@keyframes rotate-anime {
+  0% {
+    -webkit-transform: rotatex(0);
+            transform: rotatex(0);
+  }
+  100% {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

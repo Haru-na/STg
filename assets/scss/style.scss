@@ -7,6 +7,12 @@ li {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
+$col3Width:100%/3;
+
 @mixin pcOnly {
   @media screen and (min-width: 768px){
       @content;
@@ -35,6 +41,6 @@ li {
 
 
 //反映するのも
-@import "_header.scss";
-@import "_main.scss";
-@import "_footer.scss";
+@import "header";
+@import "main";
+@import "footer";
