@@ -21,13 +21,24 @@ header .menu > ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
 }
 
+header .menu > ul a {
+  color: black;
+}
+
 #contact {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -38,6 +49,17 @@ header .menu > ul {
 #contact > h2 {
   text-align: center;
   font-size: 6em;
+}
+
+#contact .please-push {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #contact .contact-btn {
@@ -61,8 +83,8 @@ header .menu > ul {
 }
 
 #contact:hover .rotate-anime {
-  -webkit-animation: rotate-anime 3s ease 1;
-          animation: rotate-anime 3s ease 1;
+  -webkit-animation: rotate-anime 0.7s ease 1;
+          animation: rotate-anime 0.7s ease 1;
 }
 
 @-webkit-keyframes rotate-anime {

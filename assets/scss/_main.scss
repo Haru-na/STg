@@ -31,12 +31,18 @@
 //contactすし
 
 #contact {
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   >h2 {
     text-align: center;
     font-size: 6em;
+  }
+  .please-push {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
   .contact-btn {
     font-size: 50px;
@@ -55,7 +61,7 @@
   }
   &:hover {
     .rotate-anime {
-      animation: rotate-anime 3s ease 1;
+      animation: rotate-anime 0.7s ease 1;
     }
     @keyframes rotate-anime {
       0%  {transform: rotatex(0);}

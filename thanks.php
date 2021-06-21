@@ -28,6 +28,17 @@
   <title>Contact finish</title>
 </head>
 <body>
+<header>
+    <!-- すし -->
+    <div class="menu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </header>
   <main class="normal">
     <div class="thank normal">
