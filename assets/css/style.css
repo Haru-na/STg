@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  background-color: yellow;
-}
-
 li {
   list-style: none;
 }
@@ -15,15 +11,14 @@ a {
   text-decoration: none;
 }
 
+header {
+  background-color: transparent;
+}
+
 header .menu > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 100px;
 }
 
@@ -32,18 +27,10 @@ header .menu > ul a {
 }
 
 #contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 #contact > h2 {
@@ -52,14 +39,9 @@ header .menu > ul a {
 }
 
 #contact .please-push {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 #contact .contact-btn {
@@ -69,13 +51,11 @@ header .menu > ul a {
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 40px;
-  -webkit-box-shadow: 0 10px 15px black;
-          box-shadow: 0 10px 15px black;
+  box-shadow: 0 10px 15px black;
 }
 
 #contact .contact-btn:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #contact .contact-btn > a {
@@ -83,29 +63,15 @@ header .menu > ul a {
 }
 
 #contact:hover .rotate-anime {
-  -webkit-animation: rotate-anime 0.7s ease 1;
-          animation: rotate-anime 0.7s ease 1;
-}
-
-@-webkit-keyframes rotate-anime {
-  0% {
-    -webkit-transform: rotatex(0);
-            transform: rotatex(0);
-  }
-  100% {
-    -webkit-transform: rotatex(360deg);
-            transform: rotatex(360deg);
-  }
+  animation: rotate-anime 0.7s ease 1;
 }
 
 @keyframes rotate-anime {
   0% {
-    -webkit-transform: rotatex(0);
-            transform: rotatex(0);
+    transform: rotatex(0);
   }
   100% {
-    -webkit-transform: rotatex(360deg);
-            transform: rotatex(360deg);
+    transform: rotatex(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
