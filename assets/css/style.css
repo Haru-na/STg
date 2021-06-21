@@ -59,20 +59,20 @@ a {
 }
 
 .stars {
-  background: #333 url(../images/main-img-pc.jpg) repeat top center;
-  z-index: -10;
+  background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
+  z-index: -5;
 }
 
 .twinkling {
   background: transparent url(../images/twinkling.png) repeat top center;
-  z-index: -7;
+  z-index: -4;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
 }
 
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
-  z-index: -8;
+  z-index: -2;
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite;
 }
@@ -98,7 +98,7 @@ header .menu > ul a {
 }
 
 #contact {
-  z-index: auto;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,11 +114,13 @@ header .menu > ul a {
 }
 
 #contact > h2 {
+  z-index: 1;
   text-align: center;
   font-size: 6em;
 }
 
 #contact .please-push {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +132,7 @@ header .menu > ul a {
 }
 
 #contact .contact-btn {
+  z-index: 1;
   font-size: 50px;
   width: 33.33333%;
   text-align: center;
