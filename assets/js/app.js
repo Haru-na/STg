@@ -1,7 +1,6 @@
 $(function() {
   let wh = $(window).height();
-  let toppage = $('.toppage').offset().top;
-
+  let toppage = $('.toppage')
   $('.btn-trigger').on('click', function() {
     $(this).toggleClass('active');
     $('.menu').toggleClass('is-active');
@@ -9,16 +8,16 @@ $(function() {
 
 
   $(window).scroll(function() {
-    if (toppage <= $(window).scrollTop() + wh) {
-      $('.toppage').fadeIn(10);
+    if ($(window).scrollTop() > 100) {
+      $(toppage).fadeIn();
     } else {
-      $('.toppage').hide();
+      $(toppage).fadeOut();
     }
-    $('.toppage').on('click', function(){
-      $('html,body').animate({
-          scrollTop: 0
-      }, '5000');
-      return false;
   })
+
+  $('.toppage').on('click', function(){
+    $('html,body').animate({
+        scrollTop: 0
+    }, '5000');
   })
 });
