@@ -324,4 +324,14 @@ header .menu > li > a {
             transform: rotatex(360deg);
   }
 }
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
