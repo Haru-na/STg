@@ -9,7 +9,44 @@
 
 
 //wroksはるちゃん
-
+#works {
+  height: 640px;
+  background-color: black;
+   h2{
+    padding: 40px ; 
+    color: white;
+    text-align: center;
+    font-size: 55px;
+  }
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .galleries-contens {
+    padding-top: 40px;
+    display: flex;
+    animation: loop-slide 30s infinite linear 1s both;
+    .contens-item {
+      text-align: center;
+      padding: 50px;
+    }
+  }
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} 
 
 
 
@@ -20,16 +57,25 @@
 
 //about-usゆうちゃん
 #about-us {
-  background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   >h3 {
     color: aliceblue;
     text-align: center;
     font-size: 6em;
+    
   } 
+  .text {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    
+  }
 }
+
 
 
 
