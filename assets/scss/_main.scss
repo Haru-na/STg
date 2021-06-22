@@ -38,7 +38,7 @@
   justify-content: center;
   align-content: center;
   >h2 {
-    color: $fontColor;
+    color: $mainColor;
     z-index: 1;
     text-align: center;
     font-size: 6em;
@@ -50,18 +50,12 @@
     align-content: center;
   }
   .contact-btn {
-    background-color: white;
+    background-color: $mainColor;
     z-index: 1;
-    font-size: 50px;
+    font-size: 3em;
     width: $col3Width;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid black;
-    border-radius: 40px;
-    box-shadow: 0 10px 15px black;
-    &:active {
-      box-shadow: none;
-    }
     >a {
       color: black;
     }
