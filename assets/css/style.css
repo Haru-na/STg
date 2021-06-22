@@ -65,13 +65,13 @@ main {
 
 .stars {
   background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
-  background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index: -5;
 }
 
 .twinkling {
   background: transparent url(../images/twinkling.png) repeat top center;
-  background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index: -4;
   -webkit-animation: move-twink-back 200s linear infinite;
           animation: move-twink-back 200s linear infinite;
@@ -81,7 +81,7 @@ main {
 
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
-  background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index: -2;
   -webkit-animation: move-clouds-back 200s linear infinite;
           animation: move-clouds-back 200s linear infinite;
@@ -223,6 +223,25 @@ header .menu > li > a {
   height: 640px;
   background-color: black;
 }
+
+#about-us {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#about-us > h3 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 6em;
+}
+
 
 #works h2 {
   padding: 40px;
@@ -404,5 +423,21 @@ footer {
   font-size: 20px;
   background-color: navy;
   color: white;
+}
+
+.toppage {
+  position: fixed;
+  text-align: center;
+  bottom: 10px;
+  right: 50px;
+}
+
+.toppage .rocket {
+  width: 50px;
+  height: 50px;
+}
+
+.toppage .toptext {
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */
