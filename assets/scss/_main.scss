@@ -19,8 +19,17 @@
 
 
 //about-usゆうちゃん
-
-
+#about-us {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  >h3 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 6em;
+  } 
+}
 
 
 
