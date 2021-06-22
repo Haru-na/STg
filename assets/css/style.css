@@ -47,11 +47,13 @@ main {
 
 .stars {
   background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
+  background-attachment: fixed;
   z-index: -5;
 }
 
 .twinkling {
   background: transparent url(../images/twinkling.png) repeat top center;
+  background-attachment: fixed;
   z-index: -4;
   animation: move-twink-back 200s linear infinite;
   filter: drop-shadow(0 0 150px black);
@@ -59,6 +61,7 @@ main {
 
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
+  background-attachment: fixed;
   z-index: -2;
   animation: move-clouds-back 200s linear infinite;
 }
@@ -170,7 +173,6 @@ header .menu > li > a {
     border: 4px solid #fff;
   }
 }
-
 #works {
   height: 640px;
   background-color: black;
@@ -215,12 +217,20 @@ header .menu > li > a {
     transform: translateX(-50%);
   }
 }
-
 #about-us {
-  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+
 }
 
 #about-us > h3 {
@@ -228,6 +238,18 @@ header .menu > li > a {
   text-align: center;
   font-size: 6em;
 }
+
+
+#about-us .text {
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 
 #contact {
   display: flex;
@@ -275,5 +297,15 @@ header .menu > li > a {
   100% {
     transform: rotatex(360deg);
   }
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
