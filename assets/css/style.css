@@ -11,51 +11,253 @@ a {
   text-decoration: none;
 }
 
-header {
+main {
   background-color: transparent;
+  z-index: 1;
 }
 
-header .menu > ul {
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.stars {
+  background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
+  z-index: -5;
+}
+
+.twinkling {
+  background: transparent url(../images/twinkling.png) repeat top center;
+  z-index: -4;
+  -webkit-animation: move-twink-back 200s linear infinite;
+          animation: move-twink-back 200s linear infinite;
+  -webkit-filter: drop-shadow(0 0 150px black);
+          filter: drop-shadow(0 0 150px black);
+}
+
+.clouds {
+  background: transparent url(../images/clouds.png) repeat top center;
+  z-index: -2;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+          animation: move-clouds-back 200s linear infinite;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
 }
 
-header .menu > ul a {
-  color: black;
+header .menu > li > a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 100px;
+  }
+  header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 90vh;
+    background: white;
+    opacity: 0.7;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  header .menu.is-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header .menu > li {
+    margin: auto 0;
+  }
+  header .menu > li > a {
+    color: black;
+  }
+  header .btn-trigger {
+    position: relative;
+    width: 50px;
+    height: 44px;
+    cursor: pointer;
+    top: 30px;
+    left: 30px;
+  }
+  header .btn-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  header .btn-trigger, header .btn-trigger span {
+    display: inline-block;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header .btn-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  header .btn-trigger span:nth-of-type(2) {
+    top: 20px;
+  }
+  header .btn-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  header #btn17::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 84px;
+    height: 84px;
+    margin: -45px 0 0 -45px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0);
+    -webkit-transition: all .75s;
+    transition: all .75s;
+  }
+  header #btn17.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(45deg);
+    transform: translateY(20px) rotate(45deg);
+  }
+  header #btn17.active span:nth-of-type(2) {
+    left: 60%;
+    opacity: 0;
+    -webkit-animation: active-btn17-bar02 .8s forwards;
+            animation: active-btn17-bar02 .8s forwards;
+  }
+  @-webkit-keyframes active-btn17-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  @keyframes active-btn17-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  header #btn17.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(-45deg);
+    transform: translateY(-20px) rotate(-45deg);
+  }
+  header #btn17.active::after {
+    border: 4px solid #fff;
+  }
 }
 
 #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #contact > h2 {
+  color: white;
+  z-index: 1;
   text-align: center;
   font-size: 6em;
 }
 
 #contact .please-push {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #contact .contact-btn {
-  font-size: 50px;
+  background-color: white;
+  z-index: 1;
+  font-size: 3em;
   width: 33.33333%;
   text-align: center;
   margin: 0 auto;
-  border: 2px solid black;
   border-radius: 40px;
-  box-shadow: 0 10px 15px black;
-}
-
-#contact .contact-btn:active {
-  box-shadow: none;
 }
 
 #contact .contact-btn > a {
@@ -63,15 +265,29 @@ header .menu > ul a {
 }
 
 #contact:hover .rotate-anime {
-  animation: rotate-anime 0.7s ease 1;
+  -webkit-animation: rotate-anime 0.7s ease 1;
+          animation: rotate-anime 0.7s ease 1;
+}
+
+@-webkit-keyframes rotate-anime {
+  0% {
+    -webkit-transform: rotatex(0);
+            transform: rotatex(0);
+  }
+  100% {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
 }
 
 @keyframes rotate-anime {
   0% {
-    transform: rotatex(0);
+    -webkit-transform: rotatex(0);
+            transform: rotatex(0);
   }
   100% {
-    transform: rotatex(360deg);
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

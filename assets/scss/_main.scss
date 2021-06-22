@@ -19,8 +19,17 @@
 
 
 //about-usゆうちゃん
-
-
+#about-us {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  >h3 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 6em;
+  } 
+}
 
 
 
@@ -36,25 +45,25 @@
   justify-content: center;
   align-content: center;
   >h2 {
+    color: $mainColor;
+    z-index: 1;
     text-align: center;
     font-size: 6em;
   }
   .please-push {
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-content: center;
   }
   .contact-btn {
-    font-size: 50px;
+    background-color: $mainColor;
+    z-index: 1;
+    font-size: 3em;
     width: $col3Width;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid black;
     border-radius: 40px;
-    box-shadow: 0 10px 15px black;
-    &:active {
-      box-shadow: none;
-    }
     >a {
       color: black;
     }

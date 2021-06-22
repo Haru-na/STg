@@ -1,10 +1,36 @@
-// .back-img {
-//     height: 100vh;
-//     width: 100vw;
-//     background-image: url(../images/main-img-pc.jpg);
-//     h1 {
-//         font-size: 55px;
-//         color: yellow;
-//     }
-//   }
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100vw;
+height:100vh;
+display:block;
+}
 
+.stars {
+background:#333 url(../images/body-backgroundimg.jpg) repeat top center;
+z-index:-5;
+}
+
+.twinkling{
+background:transparent url(../images/twinkling.png) repeat top center;
+z-index:-4;
+animation:move-twink-back 200s linear infinite;
+filter: drop-shadow(0 0 150px black);
+}
+
+.clouds{
+  background:transparent url(../images/clouds.png) repeat top center;
+  z-index:-2;
+  animation:move-clouds-back 200s linear infinite;
+}
