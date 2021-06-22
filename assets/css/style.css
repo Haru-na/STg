@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+main {
+  background-color: transparent;
+  z-index: 1;
+}
+
 @-webkit-keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -79,7 +84,7 @@ a {
           animation: move-clouds-back 200s linear infinite;
 }
 
-header .menu > ul {
+header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,13 +96,127 @@ header .menu > ul {
   height: 100px;
 }
 
-header .menu > ul a {
+header .menu > li > a {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 100px;
+  }
+  header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 90vh;
+    background: white;
+    opacity: 0.7;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  header .menu.is-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  header .menu > li {
+    margin: auto 0;
+  }
+  header .menu > li > a {
+    color: black;
+  }
+  header .btn-trigger {
+    position: relative;
+    width: 50px;
+    height: 44px;
+    cursor: pointer;
+    top: 30px;
+    left: 30px;
+  }
+  header .btn-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  header .btn-trigger, header .btn-trigger span {
+    display: inline-block;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header .btn-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  header .btn-trigger span:nth-of-type(2) {
+    top: 20px;
+  }
+  header .btn-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  header #btn17::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 84px;
+    height: 84px;
+    margin: -45px 0 0 -45px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0);
+    -webkit-transition: all .75s;
+    transition: all .75s;
+  }
+  header #btn17.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(45deg);
+    transform: translateY(20px) rotate(45deg);
+  }
+  header #btn17.active span:nth-of-type(2) {
+    left: 60%;
+    opacity: 0;
+    -webkit-animation: active-btn17-bar02 .8s forwards;
+            animation: active-btn17-bar02 .8s forwards;
+  }
+  @-webkit-keyframes active-btn17-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  @keyframes active-btn17-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+  header #btn17.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(-45deg);
+    transform: translateY(-20px) rotate(-45deg);
+  }
+  header #btn17.active::after {
+    border: 4px solid #fff;
+  }
+}
+
 #contact {
-  background-color: transparent;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,15 +257,7 @@ header .menu > ul a {
   width: 33.33333%;
   text-align: center;
   margin: 0 auto;
-  border: 2px solid black;
   border-radius: 40px;
-  -webkit-box-shadow: 0 10px 15px black;
-          box-shadow: 0 10px 15px black;
-}
-
-#contact .contact-btn:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 #contact .contact-btn > a {
