@@ -79,6 +79,20 @@
   }
 }
 
+.toppage {
+  position: fixed;
+  text-align: center;
+  bottom: 10px;
+  right: 50px;
+  .rocket {
+    width: 50px;
+    height: 50px;
+  }
+  .toptext {
+    font-size: 1em;
+  }
+}
+
 
 
 
