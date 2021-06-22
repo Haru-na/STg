@@ -11,15 +11,6 @@ a {
   text-decoration: none;
 }
 
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
 @-webkit-keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -29,7 +20,16 @@ a {
   }
 }
 
-@keyframes move-clouds-back {
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
   from {
     background-position: 0 0;
   }
@@ -38,7 +38,7 @@ a {
   }
 }
 
-@-webkit-keyframes move-clouds-back {
+@keyframes move-clouds-back {
   from {
     background-position: 0 0;
   }
@@ -67,14 +67,16 @@ a {
   background: transparent url(../images/twinkling.png) repeat top center;
   z-index: -4;
   -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite;
+          animation: move-twink-back 200s linear infinite;
+  -webkit-filter: drop-shadow(0 0 150px black);
+          filter: drop-shadow(0 0 150px black);
 }
 
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
   z-index: -2;
   -webkit-animation: move-clouds-back 200s linear infinite;
-  animation: move-clouds-back 200s linear infinite;
+          animation: move-clouds-back 200s linear infinite;
 }
 
 header .menu > ul {

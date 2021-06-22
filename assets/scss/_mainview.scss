@@ -1,47 +1,36 @@
-// .back-img {
-//     height: 100vh;
-//     width: 100vw;
-//     background-image: url(../images/main-img-pc.jpg);
-//     h1 {
-//         font-size: 55px;
-//         color: yellow;
-//     }
-//   }
-
-
 @keyframes move-twink-back {
   from {background-position:0 0;}
   to {background-position:-10000px 5000px;}
 }
-@-webkit-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
+// @-webkit-keyframes move-twink-back {
+//   from {background-position:0 0;}
+//   to {background-position:-10000px 5000px;}
+// }
+// @-moz-keyframes move-twink-back {
+//   from {background-position:0 0;}
+//   to {background-position:-10000px 5000px;}
+// }
+// @-ms-keyframes move-twink-back {
+//   from {background-position:0 0;}
+//   to {background-position:-10000px 5000px;}
+// }
 
 @keyframes move-clouds-back {
   from {background-position:0 0;}
   to {background-position:10000px 0;}
 }
-@-webkit-keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
-}
-@-moz-keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
-}
-@-ms-keyframes move-clouds-back {
-  from {background-position: 0;}
-  to {background-position:10000px 0;}
-}
+// @-webkit-keyframes move-clouds-back {
+//   from {background-position:0 0;}
+//   to {background-position:10000px 0;}
+// }
+// @-moz-keyframes move-clouds-back {
+//   from {background-position:0 0;}
+//   to {background-position:10000px 0;}
+// }
+// @-ms-keyframes move-clouds-back {
+//   from {background-position: 0;}
+//   to {background-position:10000px 0;}
+// }
 
 .stars, .twinkling, .clouds {
 position:absolute;
@@ -62,21 +51,12 @@ z-index:-5;
 .twinkling{
 background:transparent url(../images/twinkling.png) repeat top center;
 z-index:-4;
-
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
 animation:move-twink-back 200s linear infinite;
+filter: drop-shadow(0 0 150px black);
 }
 
 .clouds{
   background:transparent url(../images/clouds.png) repeat top center;
   z-index:-2;
-
--moz-animation:move-clouds-back 200s linear infinite;
--ms-animation:move-clouds-back 200s linear infinite;
--o-animation:move-clouds-back 200s linear infinite;
--webkit-animation:move-clouds-back 200s linear infinite;
-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
 }
