@@ -218,6 +218,57 @@
         }
       }
     }
+    &8 {
+      position: absolute;
+      top: 45%;
+      right: 73%;
+      animation: logo8 3s linear infinite;
+      @keyframes logo8 {
+        0% {
+          transform: rotateZ(0);
+          top: 42%;
+        }
+        25% {
+          transform: rotateZ(-25deg);
+          top: 40%;
+        }
+        50% {
+          transform: rotateZ(0);
+          top: 42%;
+        }
+        75% {
+          transform: rotateZ(25deg);
+          top: 45%;
+        }
+        100% {
+          transform: rotateZ(0);
+          top: 42%;
+        }
+      }
+    }
+    &9 {
+      position: absolute;
+      top: 50%;
+      right: 73%;
+      animation: logo9 1s linear infinite;
+      @keyframes logo9 {
+        0% {
+          right: 73%
+        }
+        25% {
+          right: 75%;
+        }
+        50% {
+          right: 73%;
+        }
+        75% {
+          right: 71%;
+        }
+        100% {
+          right: 73%;
+        }
+      }
+    }
   }
   .scroll{
     position: absolute;
@@ -403,7 +454,12 @@
 
 
 
-
+@include spOnly {
+  .mainlogo {
+    width: 335px;
+    height: 168px;
+  }
+}
 
 
 
