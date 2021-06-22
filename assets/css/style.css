@@ -819,13 +819,13 @@ header .menu > li > a {
 }
 
 #about-us > h3 {
-  color: aliceblue;
+  color: skyblue;
   text-align: center;
   font-size: 6em;
 }
 
 #about-us .text {
-  color: aliceblue;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,6 +909,18 @@ header .menu > li > a {
     -webkit-transform: rotatex(360deg);
             transform: rotatex(360deg);
   }
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: navy;
+  color: white;
 }
 
 .toppage {
