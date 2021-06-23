@@ -37,3 +37,10 @@ filter: drop-shadow(0 0 150px black);
   z-index:-2;
   animation:move-clouds-back 200s linear infinite;
 }
+
+// mainview
+.main-view {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
