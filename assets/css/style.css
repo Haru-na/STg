@@ -338,6 +338,32 @@ header .menu > li > a {
   color: skyblue;
   text-align: center;
   font-size: 70px;
+  -webkit-animation: blinkAnime 0.3s infinite alternate;
+          animation: blinkAnime 0.3s infinite alternate;
+}
+
+@-webkit-keyframes blinkAnime {
+  0% {
+    color: #7f007f;
+  }
+  79% {
+    color: #66ff66;
+  }
+  100% {
+    color: #66ff66;
+  }
+}
+
+@keyframes blinkAnime {
+  0% {
+    color: #7f007f;
+  }
+  79% {
+    color: #66ff66;
+  }
+  100% {
+    color: #66ff66;
+  }
 }
 
 #about-us .text {

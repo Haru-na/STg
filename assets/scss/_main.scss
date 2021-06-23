@@ -58,8 +58,15 @@
     color: skyblue;
     text-align: center;
     font-size: $h2font;;
+    animation: blinkAnime 0.3s infinite alternate;
     
+    @keyframes blinkAnime{
+       0% { color: #7f007f }
+      79% { color: #66ff66 }
+     100% { color: #66ff66 }
+    }
   } 
+  
   .text {
     color: black;
     display: flex;
