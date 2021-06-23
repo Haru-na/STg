@@ -19,13 +19,15 @@ display:block;
 
 .stars {
 background:#333 url(../images/body-backgroundimg.jpg) repeat top center;
-background-attachment: fixed; 
+background-attachment: fixed;
+border-radius: 0% 0% 50% 50%;
 z-index:-5;
 }
 
 .twinkling{
 background:transparent url(../images/twinkling.png) repeat top center;
-background-attachment: fixed; 
+background-attachment: fixed;
+border-radius: 0% 0% 50% 50%;
 z-index:-4;
 animation:move-twink-back 200s linear infinite;
 filter: drop-shadow(0 0 150px black);
@@ -33,7 +35,8 @@ filter: drop-shadow(0 0 150px black);
 
 .clouds{
   background:transparent url(../images/clouds.png) repeat top center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index:-2;
   animation:move-clouds-back 200s linear infinite;
 }

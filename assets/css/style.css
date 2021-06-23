@@ -48,12 +48,14 @@ main {
 .stars {
   background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
   background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index: -5;
 }
 
 .twinkling {
   background: transparent url(../images/twinkling.png) repeat top center;
   background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index: -4;
   animation: move-twink-back 200s linear infinite;
   filter: drop-shadow(0 0 150px black);
@@ -62,6 +64,7 @@ main {
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
   background-attachment: fixed;
+  border-radius: 0% 0% 50% 50%;
   z-index: -2;
   animation: move-clouds-back 200s linear infinite;
 }
@@ -210,38 +213,38 @@ header .menu > li > a {
   }
 }
 
-#works {
+.star-box #works {
   height: 640px;
   background-color: black;
 }
 
-#works h2 {
+.star-box #works h2 {
   padding: 40px;
   color: white;
   text-align: center;
   font-size: 55px;
 }
 
-#works h3 {
+.star-box #works h3 {
   color: white;
   text-align: center;
   font-size: 30px;
 }
 
-#works .wrap {
+.star-box #works .wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-#works .galleries-contens {
+.star-box #works .galleries-contens {
   padding-top: 40px;
   display: flex;
   animation: loop-slide 30s infinite linear 1s both;
 }
 
-#works .galleries-contens .contens-item {
+.star-box #works .galleries-contens .contens-item {
   text-align: center;
   padding: 50px;
 }
@@ -255,48 +258,48 @@ header .menu > li > a {
   }
 }
 
-#about-us {
+.star-box #about-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-#about-us > h3 {
-  color: aliceblue;
+.star-box #about-us > h3 {
+  color: skyblue;
   text-align: center;
   font-size: 6em;
 }
 
-#about-us .text {
-  color: aliceblue;
+.star-box #about-us .text {
+  color: black;
   display: flex;
   justify-content: center;
   font-size: 23px;
 }
 
-#contact {
+.star-box #contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-#contact > h2 {
-  color: white;
+.star-box #contact > h2 {
+  color: black;
   z-index: 1;
   text-align: center;
   font-size: 6em;
 }
 
-#contact .please-push {
+.star-box #contact .please-push {
   z-index: 1;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-#contact .contact-btn {
+.star-box #contact .contact-btn {
   background-color: white;
   z-index: 1;
   font-size: 3em;
@@ -304,13 +307,14 @@ header .menu > li > a {
   text-align: center;
   margin: 0 auto;
   border-radius: 40px;
+  border: 2px solid black;
 }
 
-#contact .contact-btn > a {
+.star-box #contact .contact-btn > a {
   color: black;
 }
 
-#contact:hover .rotate-anime {
+.star-box #contact:hover .rotate-anime {
   animation: rotate-anime 0.7s ease 1;
 }
 
@@ -323,10 +327,35 @@ header .menu > li > a {
   }
 }
 
-p {
+.star-box .toppage {
+  position: fixed;
+  text-align: center;
+  bottom: 5%;
+  right: 5%;
+}
+
+.star-box .toppage .rocket {
+  width: 50px;
+  height: 50px;
+}
+
+.star-box .toppage .toptext {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .star-box .mainlogo {
+    width: 335px;
+    height: 168px;
+  }
+}
+
+footer {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 20px;
+  background-color: navy;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
