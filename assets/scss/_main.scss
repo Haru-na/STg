@@ -135,6 +135,8 @@
     }
     &5 {
       position: absolute;
+      width: 256px;
+      height: 256px;
       top: 0;
       right: 5%;
       animation: logo5 3s linear infinite;
@@ -189,31 +191,21 @@
       position: absolute;
       top: 30%;
       right: 70%;
-      animation: logo7 3s linear infinite;
+      animation: logo7 1s linear infinite;
       @keyframes logo7 {
         0% {
-          top: 30%;
-          right: 70%;
           transform: rotateZ(0);
         }
         25% {
-          top: 30%;
-          right: 70%;
           transform: rotateZ(-25deg);
         }
         50% {
-          top: 30%;
-          right: 70%;
           transform: rotateZ(0);
         }
         75% {
-          top: 30%;
-          right: 70%;
           transform: rotateZ(25deg);
         }
         100% {
-          top: 30%;
-          right: 70%;
           transform: rotateZ(0);
         }
       }
@@ -250,19 +242,19 @@
       position: absolute;
       top: 50%;
       right: 73%;
-      animation: logo9 1s linear infinite;
+      animation: logo9 0.5s linear infinite;
       @keyframes logo9 {
         0% {
           right: 73%
         }
         25% {
-          right: 75%;
+          right: 74%;
         }
         50% {
           right: 73%;
         }
         75% {
-          right: 71%;
+          right: 72%;
         }
         100% {
           right: 73%;
@@ -322,7 +314,7 @@
 //wroksはるちゃん
 #works {
   height: 640px;
-  // background-color: black;
+  background-color: black;
    h2{
     padding: 40px ; 
     color: white;
