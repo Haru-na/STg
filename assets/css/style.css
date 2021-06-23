@@ -104,6 +104,7 @@ header .menu {
 
 header .menu > li > a {
   color: white;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -229,25 +230,55 @@ header .menu > li > a {
 }
 
 .main-view .mainlogo {
-  -webkit-animation: flash 2s linear infinite;
-          animation: flash 2s linear infinite;
+  -webkit-animation: flash 4s linear infinite;
+          animation: flash 4s linear infinite;
 }
 
 @-webkit-keyframes flash {
   0%, 100% {
+    opacity: 0;
+  }
+  20% {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
+  40% {
+    opacity: 1;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
   }
 }
 
 @keyframes flash {
   0%, 100% {
+    opacity: 0;
+  }
+  20% {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
+  40% {
+    opacity: 1;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
   }
 }
 
@@ -595,7 +626,7 @@ header .menu > li > a {
 
 .main-view .logo7 {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 70%;
   -webkit-animation: logo7 1s linear infinite;
           animation: logo7 1s linear infinite;
@@ -649,7 +680,7 @@ header .menu > li > a {
 
 .main-view .logo8 {
   position: absolute;
-  top: 45%;
+  top: 52%;
   right: 73%;
   -webkit-animation: logo8 3s linear infinite;
           animation: logo8 3s linear infinite;
@@ -659,27 +690,27 @@ header .menu > li > a {
   0% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
-    top: 42%;
+    top: 52%;
   }
   25% {
     -webkit-transform: rotateZ(-25deg);
             transform: rotateZ(-25deg);
-    top: 40%;
+    top: 50%;
   }
   50% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
-    top: 42%;
+    top: 52%;
   }
   75% {
     -webkit-transform: rotateZ(25deg);
             transform: rotateZ(25deg);
-    top: 45%;
+    top: 50%;
   }
   100% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
-    top: 42%;
+    top: 52%;
   }
 }
 
@@ -687,40 +718,40 @@ header .menu > li > a {
   0% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
-    top: 42%;
+    top: 52%;
   }
   25% {
     -webkit-transform: rotateZ(-25deg);
             transform: rotateZ(-25deg);
-    top: 40%;
+    top: 50%;
   }
   50% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
-    top: 42%;
+    top: 52%;
   }
   75% {
     -webkit-transform: rotateZ(25deg);
             transform: rotateZ(25deg);
-    top: 45%;
+    top: 50%;
   }
   100% {
     -webkit-transform: rotateZ(0);
             transform: rotateZ(0);
-    top: 42%;
+    top: 52%;
   }
 }
 
 .main-view .logo9 {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 73%;
   -webkit-animation: logo9 0.5s linear infinite;
           animation: logo9 0.5s linear infinite;
 }
 
 @-webkit-keyframes logo9 {
-  0% {
+  0%, 100% {
     right: 73%;
   }
   25% {
@@ -731,14 +762,11 @@ header .menu > li > a {
   }
   75% {
     right: 72%;
-  }
-  100% {
-    right: 73%;
   }
 }
 
 @keyframes logo9 {
-  0% {
+  0%, 100% {
     right: 73%;
   }
   25% {
@@ -749,9 +777,6 @@ header .menu > li > a {
   }
   75% {
     right: 72%;
-  }
-  100% {
-    right: 73%;
   }
 }
 
@@ -796,8 +821,8 @@ header .menu > li > a {
 }
 
 .main-view .scrolltext {
-  font-size: 2em;
-  color: #f5c32c;
+  font-size: 30px;
+  color: #ffc32c;
 }
 
 .main-view .scrolllogo {
@@ -836,7 +861,7 @@ header .menu > li > a {
   padding: 40px;
   color: white;
   text-align: center;
-  font-size: 55px;
+  font-size: 70px;
 }
 
 #works h3 {
@@ -909,10 +934,10 @@ header .menu > li > a {
       align-content: center;
 }
 
-#about-us > h3 {
+#about-us > h2 {
   color: skyblue;
   text-align: center;
-  font-size: 6em;
+  font-size: 70px;
 }
 
 #about-us .text {
@@ -945,7 +970,7 @@ header .menu > li > a {
   color: black;
   z-index: 1;
   text-align: center;
-  font-size: 6em;
+  font-size: 70px;
 }
 
 #contact .please-push {
@@ -963,7 +988,7 @@ header .menu > li > a {
 #contact .contact-btn {
   background-color: white;
   z-index: 1;
-  font-size: 3em;
+  font-size: 30px;
   width: 33.33333%;
   text-align: center;
   margin: 0 auto;
@@ -1015,7 +1040,8 @@ header .menu > li > a {
 }
 
 .toppage .toptext {
-  font-size: 1em;
+  font-size: 16px;
+  color: #ffc32c;
 }
 
 @media screen and (max-width: 767px) {

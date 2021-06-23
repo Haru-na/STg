@@ -4,14 +4,27 @@
   height: 100vh;
   position: relative;
   .mainlogo {
-    animation: flash 2s linear infinite;
+    animation: flash 4s linear infinite;
     @keyframes flash {
-      0%,100% {
-        opacity: 1;
+      0% , 100% {
+        opacity: 0;
       }
     
-      50% {
-        opacity: 0;
+      20% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 1;
+        transform: rotateX(45deg);
+      }
+      60% {
+        opacity: 1;
+        transform: rotateX(45deg);
+      }
+      80% {
+        opacity: 1;
+        transform: rotateX(0);
       }
     }
   }
@@ -189,7 +202,7 @@
     }
     &7 {
       position: absolute;
-      top: 30%;
+      top: 40%;
       right: 70%;
       animation: logo7 1s linear infinite;
       @keyframes logo7 {
@@ -212,40 +225,40 @@
     }
     &8 {
       position: absolute;
-      top: 45%;
+      top: 52%;
       right: 73%;
       animation: logo8 3s linear infinite;
       @keyframes logo8 {
         0% {
           transform: rotateZ(0);
-          top: 42%;
+          top: 52%;
         }
         25% {
           transform: rotateZ(-25deg);
-          top: 40%;
+          top: 50%;
         }
         50% {
           transform: rotateZ(0);
-          top: 42%;
+          top: 52%;
         }
         75% {
           transform: rotateZ(25deg);
-          top: 45%;
+          top: 50%;
         }
         100% {
           transform: rotateZ(0);
-          top: 42%;
+          top: 52%;
         }
       }
     }
     &9 {
       position: absolute;
-      top: 50%;
+      top: 60%;
       right: 73%;
       animation: logo9 0.5s linear infinite;
       @keyframes logo9 {
-        0% {
-          right: 73%
+        0%, 100% {
+          right: 73%;
         }
         25% {
           right: 74%;
@@ -255,9 +268,6 @@
         }
         75% {
           right: 72%;
-        }
-        100% {
-          right: 73%;
         }
       }
     }
@@ -287,8 +297,8 @@
       }
     }
     &text {
-      font-size: 2em;
-      color: rgb(245, 195, 44);
+      font-size: 30px;
+      color: $subColor;
     }
     &logo {
       animation: spin 2s linear infinite;
@@ -319,7 +329,7 @@
     padding: 40px ; 
     color: white;
     text-align: center;
-    font-size: 55px;
+    font-size: $h2font;
   }
   h3 {
     color: white;
@@ -364,10 +374,10 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  >h3 {
+  >h2 {
     color: skyblue;
     text-align: center;
-    font-size: 6em;
+    font-size: $h2font;;
     
   } 
   .text {
@@ -397,7 +407,7 @@
     color: black;
     z-index: 1;
     text-align: center;
-    font-size: 6em;
+    font-size: $h2font;;
   }
   .please-push {
     z-index: 1;
@@ -408,7 +418,7 @@
   .contact-btn {
     background-color: $mainColor;
     z-index: 1;
-    font-size: 3em;
+    font-size: 30px;
     width: $col3Width;
     text-align: center;
     margin: 0 auto;
@@ -439,7 +449,8 @@
     height: 50px;
   }
   .toptext {
-    font-size: 1em;
+    font-size: 16px;
+    color: $subColor;
   }
 }
 
