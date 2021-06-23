@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -375,6 +376,45 @@ header .menu > li > a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 23px;
+  display: inline-block;
+  -webkit-animation: sample1Anime 3s linear infinite;
+          animation: sample1Anime 3s linear infinite;
+  /* アニメーション指定 */
+  font-size: 160%;
+}
+
+@-webkit-keyframes sample1Anime {
+  50% {
+    color: #66ff66;
+    /* 文字色 */
+    -webkit-transform: rotate(180deg) scale(0.1, 0.1);
+            transform: rotate(180deg) scale(0.1, 0.1);
+    /* 大きさ */
+  }
+  100% {
+    color: #000000;
+    /* 文字色 */
+    -webkit-transform: rotate(360deg) scale(1, 1);
+            transform: rotate(360deg) scale(1, 1);
+    /* 大きさ */
+  }
+}
+
+@keyframes sample1Anime {
+  50% {
+    color: #66ff66;
+    /* 文字色 */
+    -webkit-transform: rotate(180deg) scale(0.1, 0.1);
+            transform: rotate(180deg) scale(0.1, 0.1);
+    /* 大きさ */
+  }
+  100% {
+    color: #000000;
+    /* 文字色 */
+    -webkit-transform: rotate(360deg) scale(1, 1);
+            transform: rotate(360deg) scale(1, 1);
+    /* 大きさ */
+  }
 }
 
 #contact {
