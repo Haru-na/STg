@@ -66,14 +66,12 @@ main {
 .stars {
   background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
   background-attachment: fixed;
-  border-radius: 0% 0% 50% 50%;
   z-index: -5;
 }
 
 .twinkling {
   background: transparent url(../images/twinkling.png) repeat top center;
   background-attachment: fixed;
-  border-radius: 0% 0% 50% 50%;
   z-index: -4;
   -webkit-animation: move-twink-back 200s linear infinite;
           animation: move-twink-back 200s linear infinite;
@@ -84,7 +82,6 @@ main {
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
   background-attachment: fixed;
-  border-radius: 0% 0% 50% 50%;
   z-index: -2;
   -webkit-animation: move-clouds-back 200s linear infinite;
           animation: move-clouds-back 200s linear infinite;
@@ -99,6 +96,27 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+}
+
+.star-box {
+  height: 100px;
+  width: 100px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.star-box .star {
+  height: 0;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
+  background: linear-gradient(transparent, white);
+  -webkit-animation-name: shooting;
+          animation-name: shooting;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 header .menu {
@@ -232,32 +250,6 @@ header .menu > li > a {
   header #btn17.active::after {
     border: 4px solid #fff;
   }
-}
-
-.main-view {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.main-view .star-box {
-  height: 100px;
-  width: 100px;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-}
-
-.main-view .star-box .star {
-  height: 0;
-  width: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
-  background: linear-gradient(transparent, white);
-  -webkit-animation-name: shooting;
-          animation-name: shooting;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 #works {
