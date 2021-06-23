@@ -1,0 +1,62 @@
+@import "header.scss";
+$mainColor: black;
+$subColor: white;
+@mixin normal {
+  background-color: $subColor;
+  color: $mainColor;
+}
+@mixin backblack {
+  background-color: $mainColor;
+  color: $subColor;
+}
+$pc:1024px;
+$pad:780px;
+$sp:640px;
+@mixin max-screen($break-point) { //$break-point引数
+  @media screen and (max-width: $break-point){
+    @content;
+  }
+}
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point){
+    @content;
+  }
+}
+@mixin screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max){
+    @content;
+  }
+}
+$font-family: 'Stint Ultra Condensed', cursive;
+@mixin h2text(){
+      font-size: 100px;
+      text-align: center;
+      padding-bottom: 30px;
+      font-family: $font-family;
+      letter-spacing: 20px;
+      @include max-screen($sp){
+        font-size: 50px;
+      } 
+}
+@mixin p-text() {
+  text-align: center;
+  font-size: 45px;
+  font-family: $font-family;
+  padding: 30px 0;
+}
+
+.thank {
+  >h2{
+    @include h2text();
+  }
+  .thank-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    .thank-text {
+      @include p-text();
+    }
+  }
+}
