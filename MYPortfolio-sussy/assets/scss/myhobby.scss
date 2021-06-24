@@ -1,0 +1,140 @@
+$mainColor: black;
+$subColor: white;
+@mixin normal {
+  background-color: $subColor;
+  color: $mainColor;
+}
+@mixin backblack {
+  background-color: $mainColor;
+  color: $subColor;
+}
+$font-family: 'Stint Ultra Condensed', cursive;
+$pc:1024px;
+$pad:780px;
+$sp:640px;
+@mixin max-screen($break-point) { //$break-point引数
+  @media screen and (max-width: $break-point){
+    @content;
+  }
+}
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point){
+    @content;
+  }
+}
+@mixin screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max){
+    @content;
+  }
+}
+
+@mixin h2text(){
+      font-size: 100px;
+      text-align: center;
+      padding-bottom: 30px;
+      font-family: $font-family;
+      letter-spacing: 20px;
+      @include max-screen($sp){
+        font-size: 50px;
+      } 
+}
+.myhobby-all {
+  align-items: center;
+  .myhobby-top{
+    >h2{
+      @include h2text();
+    }
+  }
+  .myhobby-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    p{
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+}
+
+.basket {
+  @include max-screen($pad){
+    flex-direction: column;
+  } 
+}
+.snow {
+  @include max-screen($pad){
+    flex-direction: column-reverse;
+  } 
+}
+
+
+
+.box {
+  position   : relative;
+  width      : 400px;
+  height     : 400px;
+  margin     : 40px;
+  overflow   : hidden;
+}
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 12s infinite;   /* 4画像 × 各3s = 12s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image : url(../img/bs1.JPG);   /* 背景の画像を指定 */
+  background-size: cover;
+}
+.box .src2 {
+  background-image : url(../img/bs2.JPG);   /* 背景の画像を指定 */
+  background-size: cover;
+  animation-delay  : 3s;
+}
+.box .src3 {
+  background-image : url(../img/bs3.JPG);   /* 背景の画像を指定 */
+  background-size: cover;
+  animation-delay  : 6s;
+}
+.box .src4 {
+  background-image : url(../img/bs4.JPG);   /* 背景の画像を指定 */
+  background-size: cover;
+  animation-delay  : 9s;
+}
+
+.box .src5 {
+  background-image : url(../img/suno1.jpg);   /* 背景の画像を指定 */
+  background-size: cover;
+}
+.box .src6 {
+  background-image : url(../img/suno2.PNG);   /* 背景の画像を指定 */
+  background-size: cover;
+  animation-delay  : 3s;
+}
+.box .src7 {
+  background-image : url(../img/suno3.jpg);   /* 背景の画像を指定 */
+  background-size: cover;
+  animation-delay  : 6s;
+}
+.box .src8 {
+  background-image : url(../img/suno4.jpg);   /* 背景の画像を指定 */
+  background-size: cover;
+  animation-delay  : 9s;
+}
+
+@keyframes bgAnime {
+   0% { opacity: 0; transform: rotate(-180deg) }
+   5% { opacity: 1; transform: rotate(0deg) }
+  25% { opacity: 1; transform: rotate(0deg) }
+  30% { opacity: 0; transform: rotate(180deg) }
+  31% { opacity: 0; }
+ 100% { opacity: 0; }
+}

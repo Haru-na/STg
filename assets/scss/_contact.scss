@@ -1,0 +1,79 @@
+.contact{
+  >h2{
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 20px;
+    color: $subColor;
+  }
+  .contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    .contact-input {
+      width: 30vw;
+      height: 30px;
+      margin-bottom: 18px;
+    }
+    .address-text {
+      width: 30vw;
+      height: 30px;
+      margin-bottom: 18px;
+    }
+    >p {
+      font-size: 20px;
+      color: $subColor;
+      margin-bottom: 18px;
+    }
+    .address-btn {
+      width: 50px;
+      margin: 0 auto 18px auto;
+    }
+    .contacts {
+      width: 30vw;
+      font-size: 23px;
+      margin-bottom: 18px;
+    }
+  }
+  .submit{
+    width: 50px;
+    height: 40px;
+  }
+}
+
+@include spOnly {
+  .contact{
+    >h2{
+      font-size: 35px;
+      text-align: center;
+      padding-bottom: 15px;
+      letter-spacing: 10px;
+    }
+    .contact-box{
+      padding: 20px 0;
+      .contact-input {
+        margin-bottom: 18px;
+      }
+      .address-text {
+        width: 30vw;
+        height: 30px;
+        margin-bottom: 18px;
+      }
+      >p {
+        font-size: 10px;
+        margin-bottom: 10px;
+        overflow-wrap: break-all;
+      }
+      .address-btn {
+        width: 50px;
+        margin: 0 auto 18px auto;
+      }
+      .contacts {
+        width: 30vw;
+        font-size: 15px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
