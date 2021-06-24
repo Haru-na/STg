@@ -17,8 +17,8 @@ main {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-=======
+
+
 h2 {
   padding: 40px;
   text-align: center;
@@ -52,7 +52,7 @@ h2 {
   }
 }
 
->>>>>>> d81803787419ad7b37d6e3b860bb1f511a0f91b4
+
 @-webkit-keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -449,7 +449,7 @@ header .menu > li > a {
   font-size: 70px;
   -webkit-animation: blinkAnime 0.3s infinite alternate;
           animation: blinkAnime 0.3s infinite alternate;
-<<<<<<< HEAD
+
 }
 
 @-webkit-keyframes blinkAnime {
@@ -462,8 +462,7 @@ header .menu > li > a {
   100% {
     color: #66ff66;
   }
-=======
->>>>>>> d81803787419ad7b37d6e3b860bb1f511a0f91b4
+
 }
 
 @keyframes blinkAnime {
