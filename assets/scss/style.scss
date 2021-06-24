@@ -16,8 +16,25 @@ main {
   z-index: 1;
 }
 
+h2 {
+  padding: 40px ; 
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Russo One', sans-serif;
+  animation: blinkAnime 0.3s infinite alternate;
+    @keyframes blinkAnime{
+    0% { color: #7f007f }
+    79% { color: #66ff66 }
+    100% { color: #66ff66 }
+  }
+}
 
-$h2font:70px;
+@include spOnly {
+  h2 {
+    font-size: 40px;
+  }
+}
+
 $mainColor:white;
 $subColor: rgb(255,195,44);
 $col3Width:100%/3;
