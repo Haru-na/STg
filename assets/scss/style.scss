@@ -23,7 +23,6 @@ $subColor: rgb(255,195,44);
 $col3Width:100%/3;
 
 
-
 @mixin pcOnly {
   @media screen and (min-width: 768px){
       @content;
