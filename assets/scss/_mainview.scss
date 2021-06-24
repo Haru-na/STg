@@ -106,22 +106,15 @@ filter: drop-shadow(0 0 150px black);
 
 }
 
-
-  @media screen and (max-width: 780px){
-    // mainview
-    .main-view {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      .main-left {
-        display: flex;
-        flex-direction: column;
-        h1 {
-          font-size: 200px;
-        }
+@include spOnly {
+  .main-view {
+    flex-direction: column;
+    .main-left {
+      h1 {
+        font-size: 200px;
       }
     }
   }
+}
+
 }

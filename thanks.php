@@ -19,6 +19,18 @@
   $stmt->execute($data);
   //データベースを切断する
   $dbh = null;
+
+  //メールアドレス設定
+
+  mb_language("Japanese");
+  mb_internal_encoding("UTF-8");
+
+  $to = "sussy168168@gmail.com"; 
+  $subject = "STgからお問い合わせ";
+  $message =  $name + '様' .'<br>'. $address .'<br>'. + $contact;
+  $headers = $email;
+  mail($to, $subject, $message, $headers);
+
 ?>
 
 <!DOCTYPE html>
