@@ -17,8 +17,6 @@ main {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-=======
 h2 {
   padding: 40px;
   text-align: center;
@@ -52,7 +50,12 @@ h2 {
   }
 }
 
->>>>>>> d81803787419ad7b37d6e3b860bb1f511a0f91b4
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
 @-webkit-keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -103,12 +106,13 @@ h2 {
 .stars {
   background: #333 url(../images/body-backgroundimg.jpg) repeat top center;
   background-attachment: fixed;
+  position: fixed;
   z-index: -5;
 }
 
 .twinkling {
   background: transparent url(../images/twinkling.png) repeat top center;
-  background-attachment: fixed;
+  position: fixed;
   z-index: -4;
   -webkit-animation: move-twink-back 200s linear infinite;
           animation: move-twink-back 200s linear infinite;
@@ -118,7 +122,7 @@ h2 {
 
 .clouds {
   background: transparent url(../images/clouds.png) repeat top center;
-  background-attachment: fixed;
+  position: fixed;
   z-index: -2;
   -webkit-animation: move-clouds-back 200s linear infinite;
           animation: move-clouds-back 200s linear infinite;
@@ -365,14 +369,6 @@ header .menu > li > a {
   background-color: black;
 }
 
-#works h2 {
-  padding: 40px;
-  color: white;
-  text-align: center;
-  font-size: 70px;
-  font-family: 'Russo One', sans-serif;
-}
-
 #works h3 {
   color: white;
   text-align: center;
@@ -443,41 +439,6 @@ header .menu > li > a {
       align-content: center;
 }
 
-#about-us > h2 {
-  color: skyblue;
-  text-align: center;
-  font-size: 70px;
-  -webkit-animation: blinkAnime 0.3s infinite alternate;
-          animation: blinkAnime 0.3s infinite alternate;
-<<<<<<< HEAD
-}
-
-@-webkit-keyframes blinkAnime {
-  0% {
-    color: #7f007f;
-  }
-  79% {
-    color: #66ff66;
-  }
-  100% {
-    color: #66ff66;
-  }
-=======
->>>>>>> d81803787419ad7b37d6e3b860bb1f511a0f91b4
-}
-
-@keyframes blinkAnime {
-  0% {
-    color: #7f007f;
-  }
-  79% {
-    color: #66ff66;
-  }
-  100% {
-    color: #66ff66;
-  }
-}
-
 #about-us .text {
   color: black;
   display: -webkit-box;
@@ -541,13 +502,6 @@ header .menu > li > a {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-#contact > h2 {
-  color: black;
-  z-index: 1;
-  text-align: center;
-  font-size: 70px;
 }
 
 #contact .please-push {
