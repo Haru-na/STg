@@ -42,7 +42,7 @@
   </header>
   <main>
     <div class="contact">
-      <h2>Contact</h2>
+      <h2 class="contacth">Contact</h2>
         <form action="check.php" method="POST">
           <div class="contact-box">
             <input class="contact-input" type="text" name="name" placeholder="名前">

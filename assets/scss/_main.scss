@@ -44,9 +44,11 @@
 
 //about-usゆうちゃん
 #about-us {
+  height: 50vh;
+  background-image: url(../images/aboutus-background.jpg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   
   .text {
@@ -84,6 +86,7 @@
 //contactすし
 
 #contact {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +107,7 @@
     border-radius: 40px;
     border: 2px solid black;
     >a {
-      color: black;
+      color: #fff;
     }
   }
   &:hover {

@@ -23,17 +23,17 @@ h2 {
   font-family: 'Russo One', sans-serif;
   animation: blinkAnime 0.3s infinite alternate;
     @keyframes blinkAnime{
-    0% { color: #7f007f }
-    79% { color: #66ff66 }
-    100% { color: #66ff66 }
+    0% { color: #ffc32c }
+    79% { color: #ff962c }
+    100% { color: #ffdc2c }
   }
 }
 
-@include spOnly {
-  h2 {
-    font-size: 40px;
-  }
-}
+// @include spOnly {
+//   h2 {
+//     font-size: 40px;
+//   }
+// }
 
 $mainColor:white;
 $subColor: rgb(255,195,44);
