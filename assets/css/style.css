@@ -126,16 +126,8 @@ main {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
   .main-view .main-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .main-view .main-view .main-left {
-    display: flex;
     flex-direction: column;
   }
   .main-view .main-view .main-left h1 {
