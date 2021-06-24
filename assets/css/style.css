@@ -17,11 +17,10 @@ main {
   z-index: 1;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 42e3e6357eb88aa94466d49dc99bff48ec768f36
+
+
 h2 {
   padding: 40px;
   text-align: center;
@@ -55,14 +54,13 @@ h2 {
   }
 }
 
-<<<<<<< HEAD
-=======
+
 @media screen and (max-width: 767px) {
   h2 {
     font-size: 40px;
   }
 }
->>>>>>> 42e3e6357eb88aa94466d49dc99bff48ec768f36
+
 
 @-webkit-keyframes move-twink-back {
   from {
@@ -447,7 +445,7 @@ header .menu > li > a {
       align-content: center;
 }
 
-<<<<<<< HEAD
+
 #about-us > h2 {
   color: skyblue;
   text-align: center;
@@ -482,8 +480,7 @@ header .menu > li > a {
   }
 }
 
-=======
->>>>>>> 42e3e6357eb88aa94466d49dc99bff48ec768f36
+
 #about-us .text {
   color: black;
   display: -webkit-box;
