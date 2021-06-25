@@ -102,9 +102,8 @@ filter: drop-shadow(0 0 150px black);
          opacity: 0;
        }
      }
+    }
   }
-  
-
 }
 
 @include spOnly {
@@ -112,10 +111,8 @@ filter: drop-shadow(0 0 150px black);
     flex-direction: column;
     .main-left {
       h1 {
-        font-size: 200px;
+        font-size: 15vh;
       }
     }
   }
-}
-
 }

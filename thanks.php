@@ -78,9 +78,6 @@
           <p class="thank-text">Contact contents :<?=$contact?></p>
           <p class="thank-text">Thank you very much！</p>
         </div>
-        <div class="back-btn">
-        <a href="./index.html">Back home!!</a>
-      </div>
     </div>
   </main>
 </body>
