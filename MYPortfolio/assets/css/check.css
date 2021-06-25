@@ -1,0 +1,50 @@
+.check {
+  padding-bottom: 40px;
+}
+
+.check > h2 {
+  font-size: 100px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Stint Ultra Condensed", cursive;
+  letter-spacing: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .check > h2 {
+    font-size: 50px;
+  }
+}
+
+.check .check-box {
+  padding-bottom: 40px;
+}
+
+.check .check-box > .check-text {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Stint Ultra Condensed", cursive;
+  padding: 30px 0;
+}
+
+.check-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.check-input .submit {
+  width: 50px;
+  height: 40px;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=check.css.map */

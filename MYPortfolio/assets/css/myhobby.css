@@ -1,0 +1,197 @@
+@charset "UTF-8";
+.myhobby-all {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myhobby-all .myhobby-top > h2 {
+  font-size: 100px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Stint Ultra Condensed", cursive;
+  letter-spacing: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .myhobby-all .myhobby-top > h2 {
+    font-size: 50px;
+  }
+}
+
+.myhobby-all .myhobby-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0;
+}
+
+.myhobby-all .myhobby-bottom p {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 780px) {
+  .basket {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .snow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 40px;
+  overflow: hidden;
+}
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-animation: bgAnime 12s infinite;
+          animation: bgAnime 12s infinite;
+  /* 4画像 × 各3s = 12s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image: url(../img/bs1.JPG);
+  /* 背景の画像を指定 */
+  background-size: cover;
+}
+
+.box .src2 {
+  background-image: url(../img/bs2.JPG);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.box .src3 {
+  background-image: url(../img/bs3.JPG);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.box .src4 {
+  background-image: url(../img/bs4.JPG);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.box .src5 {
+  background-image: url(../img/suno1.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+}
+
+.box .src6 {
+  background-image: url(../img/suno2.PNG);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.box .src7 {
+  background-image: url(../img/suno3.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.box .src8 {
+  background-image: url(../img/suno4.jpg);
+  /* 背景の画像を指定 */
+  background-size: cover;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+@-webkit-keyframes bgAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  31% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bgAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  31% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=myhobby.css.map */

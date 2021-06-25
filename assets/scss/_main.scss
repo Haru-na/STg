@@ -1,10 +1,13 @@
 //wroksはるちゃん
 #works {
+  margin-top: 100px;
   height: 640px;
-  h3 {
+  p {
     color: white;
     text-align: center;
     font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+
   }
   
     
@@ -43,8 +46,9 @@
 
 //about-usゆうちゃん
 #about-us {
-  height: 50vh;
-  background-image: url(../images/aboutus-background.jpg);
+  margin-top: 100px;
+  height: 640px;
+  // background-image: url(../images/aboutus-background.jpg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,11 +89,13 @@
 //contactすし
 
 #contact {
-  height: 50vh;
+  height: 640px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  position: relative;
   .please-push {
     z-index: 1;
     display: flex;
@@ -102,12 +108,13 @@
     font-size: 30px;
     width: $col3Width;
     text-align: center;
-    margin: 0 auto;
-    border-radius: 40px;
+    margin: 15vh auto;
+    border-radius: 10px;
     border: 2px solid black;
     background-image: linear-gradient(to right, #E040FB, #00BCD4);
+    // background-image: linear-gradient(to right, #525a69, #898dda);
     >a {
-      color: #fff;
+      color: black;
     }
   }
   &:hover {
@@ -119,29 +126,38 @@
       100%  {transform: rotatex(360deg);}
     }
   }
-}
-
-.toppage {
-  position: fixed;
-  text-align: center;
-  bottom: 5%;
-  right: 5%;
-  .rocket {
-    width: 50px;
-    height: 50px;
-  }
-  .toptext {
-    font-size: 16px;
-    color: $subColor;
+  .robo {
+    position: absolute;
+    top: 300px;
+    left: 50px;
   }
 }
 
-
-
-
-@include spOnly {
-  .mainlogo {
-    width: 335px;
-    height: 168px;
+#earth {
+  height: 50vh;
+  background-image: url(../images/earth-backgroundimg.jpg);
+  .toppage {
+    position: fixed;
+    text-align: center;
+    bottom: 5%;
+    right: 5%;
+    .rocket {
+      width: 50px;
+      height: 50px;
+    }
+    .toptext {
+      font-size: 16px;
+      color: $subColor;
+    }
+  }
+  
+  
+  
+  
+  @include spOnly {
+    .mainlogo {
+      width: 335px;
+      height: 168px;
+    }
   }
 }
