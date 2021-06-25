@@ -1,0 +1,43 @@
+$mainColor: black;
+$subColor: white;
+@mixin normal {
+  background-color: $subColor;
+  color: $mainColor;
+}
+@mixin backblack {
+  background-color: $mainColor;
+  color: $subColor;
+}
+$font-family: 'Stint Ultra Condensed', cursive;
+
+
+
+
+.fooder-contents {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  .snsnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px ;
+  }
+   >p{
+      text-align: center;
+      letter-spacing: 5px;
+      font-family: $font-family;
+      margin: auto 0;
+    }
+  @include max-screen($sp){
+    flex-direction: column;
+  } 
+}
+
+.sns {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+}

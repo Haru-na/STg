@@ -1,0 +1,361 @@
+*{
+    margin: o;
+    padding: 0;
+}
+/* トップページ */
+.toppage{
+    background-image: url(../img/avrielle-suleiman-u0sviAL9pJM-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+
+li > a{
+    font-family: 'Josefin Slab', serif;
+    color:gray;
+    text-decoration: none;
+
+}
+
+li > a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  li > a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(160, 146, 146);
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+  }
+  li > a:hover::after {
+    transform: scale(1, 1);
+  }
+  /* トップページ終わり */
+
+  /* main */
+.main-img {
+    width: 400px;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+.main > .main-img2 {
+    width: 200px;
+    height: 260px;
+    margin-top: 200px;
+    padding-right: 100px;
+    
+   
+    
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.main > h1{
+    font-family: 'Homemade Apple', cursive;
+    padding-top: 100px;
+    padding-left: 120px;
+    font-size: 50px;
+}
+p {
+    padding-top: 250px;
+    /* margin-right: 150px; */
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+.main2 {
+    background-image:url(../img/A\ cute\ neutral\ wallpaper\ _\)\ #wallpaper\ #iphone\ #beige\ #neutral\ #minimalisticaesthetic\ #interesting\ #minimalistic\ #art\ #brown\ #tan\ #background.jpeg);
+    width: 100vw;
+}
+
+   .main-img {
+    width: 400px;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+ .main-img2 {
+    width: 300px;
+    height: 360px;
+    margin-top: 50px;
+    padding-right: 100px;
+    
+   
+    
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.main-right-top > h1{
+    font-family: 'Homemade Apple', cursive;
+    padding-top: 100px;
+    padding-left: 120px;
+    font-size: 40px;
+}
+
+.main-right-bottom {
+    display: flex;
+}
+p {
+    padding-top: 100px;
+    /* margin-right: 150px; */
+    font-family: fantasy;
+    font-size: 30px;
+}
+/* mainおわり */
+
+/* yoga */
+.main2 {
+    background-image:url(../img/wallpaper.jpeg);
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    justify-content:center ;
+   
+
+}
+.main2 > img{
+    height: 350px;
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.main3 > h2 {
+font-family: 'Rock Salt', cursive;
+
+    font-size:50px;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+.main3 > div{
+    font-family: fantasy;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 500px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(237, 232, 222); 
+}
+
+
+.main3 >.button {
+    text-align: center;
+    padding-left: 300px;
+}
+/* yoga 終わり*/
+
+/* workout */
+
+.workout {
+    height: 80vh;
+    width: 100vw;
+    background-image:url(../img/wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+.workout-contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.workout_left {
+    padding: 30px;
+}
+
+.workout_left > h2 {
+    padding: 20px;
+    font-family: 'Rock Salt', cursive;
+    font-size:40px;
+}
+
+.workout_left > div {
+    font-family: fantasy;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+
+.workout_right > img{
+    padding: 30px;
+    
+}
+
+.workout_button {
+    padding: 20px;
+    text-align: center;
+}
+/* workout終わり */
+/* コンタクト */
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(236, 223, 214);
+}
+
+#contact > h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 27px;
+    color: rgb(209, 162, 132);
+}
+
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+
+
+.label {
+    color: rgb(209, 162, 132);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.input-text {
+    display: block;
+    width: 50vw;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(236, 223, 214);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(209, 162, 132);
+
+}
+
+#message {
+    height: 30vh;
+    width: 40vh;
+    display: inline-block;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(209, 162, 132);
+    font-weight: bold;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.submit-btn{
+    display: block;
+    width: 140px;
+    font-size: 18px;
+    margin: auto;
+    height: 40px;
+    background-color: rgb(212, 180, 160);
+    cursor: pointer;
+    color: white;
+    border: 2px solid transparent;
+    
+}
+
+
+.submit-button:hover {
+    background-color: rgb(230, 208, 196);
+}
+/* コンタクト終わり */
+
+/* footer */
+footer {
+    height: 50vh;
+    background-color: rgb(212, 180, 160);
+    
+}
+
+footer > h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    
+    
+}
+.line {
+   
+    width: 400px;
+    border-bottom: medium solid white;
+    padding: 5px ;
+    margin: auto;
+}
+
+.footer_nav{
+    padding: 20px 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_nav  li {
+    list-style: none;
+}
+
+.footer_nav  li > a{
+    color: white;
+    padding: 15px 50px;
+    display: block; 
+
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    
+}
+.footericon {
+    padding: 20px
+              
+}
+/* footer終わり */
+
+/* レスポンシブ */
+/* レスポンシブ終わり */
+

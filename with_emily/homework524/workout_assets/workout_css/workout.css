@@ -1,0 +1,45 @@
+ .main {
+    height: 50px;
+    
+ }
+
+#pagepiling > section1 {
+    max-width: 100%;
+
+}
+
+/* #workout {
+    background-image: url(../img/pexels-ron-lach-7674511.mp4);
+} */
+
+#beauty {
+    height: 100vh;
+    background-image: url(../workout_img/sven-mieke-optBC2FxCfc-unsplash.jpg);
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    align-items: center;
+}
+
+.box1{
+    padding: 100px;
+
+}
+
+.box1 > h1{
+    font-size: 100px;
+}
+
+.box1 > p {
+    font-size: 22px;
+}
+
+#pain {
+    height: 100vh;
+    background-image: url(../workout_img/pexels-scott-webb-140955.jpg);
+    background-repeat: repeat;
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    align-items: center;
+}

@@ -40,9 +40,9 @@ h2 {
   font-family: $english;
   animation: blinkAnime 0.3s infinite alternate;
     @keyframes blinkAnime{
-    0% { color: #ffc32c }
-    79% { color: #ff962c }
-    100% { color: #ffdc2c }
+    0% { color: #f8d887 }
+    79% { color:  #ffc32c }
+    100% { color: #ffc32c }
   }
 }
 
