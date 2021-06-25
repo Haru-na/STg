@@ -17,10 +17,6 @@ main {
   z-index: 1;
 }
 
-
-
-
-
 h2 {
   padding: 40px;
   text-align: center;
@@ -38,23 +34,6 @@ h2 {
   }
   100% {
     color: #ffdc2c;
-  }
-}
-
-
-@media screen and (max-width: 767px) {
-  h2 {
-    font-size: 40px;
-  }
-}
-
-
-@-webkit-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
   }
 }
 
@@ -289,7 +268,6 @@ header .menu > li > a {
 
 #works {
   height: 640px;
-  background-color: black;
 }
 
 #works h3 {
@@ -332,52 +310,7 @@ header .menu > li > a {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
-
-
-#about-us > h2 {
-  color: skyblue;
-  text-align: center;
-  font-size: 70px;
-  -webkit-animation: blinkAnime 0.3s infinite alternate;
-          animation: blinkAnime 0.3s infinite alternate;
-
-}
-
-@-webkit-keyframes blinkAnime {
-  0% {
-    color: #7f007f;
-  }
-  79% {
-    color: #66ff66;
-  }
-  100% {
-    color: #66ff66;
-  }
-
-}
-
-@keyframes blinkAnime {
-  0% {
-    color: #7f007f;
-  }
-  79% {
-    color: #66ff66;
-  }
-  100% {
-    color: #66ff66;
-  }
-}
-
 
 #about-us .text {
   color: black;
@@ -411,15 +344,6 @@ header .menu > li > a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 #contact .please-push {
@@ -438,6 +362,7 @@ header .menu > li > a {
   margin: 0 auto;
   border-radius: 40px;
   border: 2px solid black;
+  background-image: linear-gradient(to right, #E040FB, #00BCD4);
 }
 
 #contact .contact-btn > a {
@@ -485,9 +410,9 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 20px;
-  background-color: navy;
-  color: white;
+  font-size: 18px;
+  background-color: #ffc32c;
+  color: black;
 }
 
 .contact > h2 {
