@@ -149,11 +149,17 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+  .main-view {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .main-view .main-view {
     flex-direction: column;
   }
-  .main-view .main-view .main-left h1 {
-    font-size: 200px;
+  .main-view .main-left h1 {
+    font-size: 15vh;
   }
 }
 
@@ -606,9 +612,6 @@ footer {
   }
   .thank .thank-box .thank-text {
     font-size: 25px;
-  }
-  .back-btn > a {
-    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
